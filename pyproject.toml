@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cognitive-distortions-bot"
+version = "0.1.0"
+description = "A Telegram bot designed to help users identify cognitive distortions in their thoughts and formulate rational responses. The bot encourages mindfulness and reduces anxiety by guiding users through thought analysis and cognitive training exercises."
+authors = ["Alexander Evdokimov <83905079+snakerzr@users.noreply.github.com>"]
+license = "Apache 2.0 License"
+readme = "README.md"
+packages = [{include = 'src'}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.13.1"
+python-dotenv = "^1.0.1"
+pydantic-settings = "^2.6.0"
+sqlalchemy = "^2.0.36"
+openai = "^1.53.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
