@@ -25,6 +25,6 @@ RUN mkdir -p /data
 
 RUN chmod -R 777 /data
 
-ENV PYTHONPATH="/app/src:$PYTHONPATH"
+ENV PYTHONPATH="/app/src:/data:$PYTHONPATH"
 
 CMD ["python", "./src/main.py"]
