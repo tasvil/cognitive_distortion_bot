@@ -1,7 +1,7 @@
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from src.white_list import (
+from data.white_list import (
     ALLOWED_IDS as default_allowed_ids,
     TESTER_IDS as default_tester_ids,
 )

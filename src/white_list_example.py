@@ -3,3 +3,5 @@ ALLOWED_IDS = []
 
 # Список тестеров с неограниченным балансом 
 TESTER_IDS = [] 
+
+# Должен быть в /data/white_list.py
