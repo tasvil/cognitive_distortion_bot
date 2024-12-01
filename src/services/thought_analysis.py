@@ -104,7 +104,7 @@ class AnalysisService:
         # 3. Семантическая проверка через OpenAI
         response = self.client.get_response(
             user_message=text,
-            system_prompt="Вы являетесь ИИ, специализирующимся на семантическом анализе. Оцените осмысленность текста пользователя по шкале от 0 до 1.",
+            system_prompt="Вы являетесь ИИ, специализирующимся на семантическом анализе. Оцените, является ли текст пользователя мыслью, подходящей для дальнейшего анализа, по шкале от 0 до 1.",
             response_schema=MeaningfulnessSchema
         )
         response_reasoning = response.reasoning
