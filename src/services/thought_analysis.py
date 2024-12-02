@@ -105,7 +105,8 @@ class AnalysisService:
         response = self.client.get_response(
             user_message=text,
             system_prompt="Вы являетесь ИИ, специализирующимся на семантическом анализе. Оцените, является ли текст пользователя мыслью, подходящей для дальнейшего анализа, по шкале от 0 до 1.",
-            response_schema=MeaningfulnessSchema
+            response_schema=MeaningfulnessSchema,
+            temperature=0.0
         )
         response_reasoning = response.reasoning
         logger.debug(f'{text}:{response_reasoning}')
